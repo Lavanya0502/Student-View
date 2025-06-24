@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Typography, Paper } from '@cw/rds';
+import { Box, Typography, Paper, Link } from '@cw/rds';
 import { CircleCross } from '@cw/rds/icons';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const AlreadyRegistered = () => (
   <Box
@@ -33,26 +34,38 @@ const AlreadyRegistered = () => (
       />
 
       <Typography
-        variant="h4"
-        style={{
-          fontWeight: 'bold',
-          color: 'var(--error-dark)',
-          marginBottom: '0.75rem',
-          fontFamily: 'Roboto, sans-serif',
-        }}
-      >
-        Already Registered!
-      </Typography>
-
-      <Typography
         variant="body1"
         style={{
-          color: 'var(--text-secondary)',
+          marginBottom: '1rem',
+          fontWeight: 500,
           fontFamily: 'Roboto, sans-serif',
+          color: 'var(--text-primary)'
         }}
       >
-        Your registration has already been captured.
+        Your registration is captured already
       </Typography>
+
+      <Box mb={1}>
+        <Link
+          href="https://www.incture.com"
+          target="_blank"
+          underline="hover"
+          sx={{ display: 'flex',textDecoration: 'none',alignItems: 'center', justifyContent: 'center', gap: '4px' }}
+        >
+          Know more about Incture <OpenInNewIcon fontSize="small" />
+        </Link>
+      </Box>
+
+      <Box mb={2}>
+        <Link
+          href="https://www.cherrywork.com"
+          target="_blank"
+          underline="hover"
+          sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}
+        >
+          Know more about Cherrywork <OpenInNewIcon fontSize="small" />
+        </Link>
+      </Box>
     </Paper>
   </Box>
 );

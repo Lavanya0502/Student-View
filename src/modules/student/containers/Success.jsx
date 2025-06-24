@@ -47,7 +47,7 @@ const Success = () => (
           color: 'var(--text-secondary)',
           fontFamily: 'Roboto, sans-serif'
         }}>
-        You&apos;re all set. We&apos;ll see you at the exam!
+        Kindly check email for next steps
       </Typography>
     </Paper>
   </Box>
